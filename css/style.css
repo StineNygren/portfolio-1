@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background-color: #151412;
+}
+
+:root {
+  /* Color */
+  --primary-color: #e58a00;
+  --secondary-color: #fff;
+  /* --tertiary-color: #804a23; */
+}
+
+/* Font Size */
+
+.font-size-large {
+  font-size: clamp(3rem, 2.9rem + 0.5vw, 3.5rem);
+}
+.font-size-small {
+  font-size: clamp(1.6rem, 1.56rem + 0.2vw, 1.8rem);
+}
+.font-size-medium {
+  font-size: clamp(1.8rem, 1.56rem + 1.2vw, 3rem);
+}
+
+/* Classes */
+
+.text-center {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  font-size: clamp(1.6rem, 1.56rem + 0.2vw, 1.8rem);
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.color-secondary {
+  color: var(--secondary-color);
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.hero-section {
+  background-image: url(../img/hero-img.png);
+  background-position: center;
+  background-size: cover;
+
+  padding: 15% 20%;
+}
