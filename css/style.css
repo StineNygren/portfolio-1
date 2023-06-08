@@ -11,6 +11,7 @@ body {
   font-size: 1.6rem;
   min-height: 100vh;
   background-color: #151412;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -23,7 +24,7 @@ body {
 /* Font Size */
 
 .font-size-large {
-  font-size: clamp(3rem, 2.9rem + 0.5vw, 3.5rem);
+  font-size: clamp(3.5rem, 3.2rem + 1.5vw, 5rem);
 }
 .font-size-small {
   font-size: clamp(1.6rem, 1.56rem + 0.2vw, 1.8rem);
@@ -43,6 +44,10 @@ body {
   color: black;
 }
 
+/* .wrapper {
+  width: min(100% - 2rem 1000px);
+} */
+
 .btn {
   background-color: var(--primary-color);
   border: none;
@@ -52,22 +57,147 @@ body {
   color: var(--secondary-color);
 }
 
-.color-secondary {
+/* .color-secondary {
   color: var(--secondary-color);
-}
+} */
 
 .color-primary {
   color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: clamp(1.6rem, 1.56rem + 0.2vw, 1.8rem);
+  /* line-height: 1; */
+  margin-bottom: 2rem;
 }
 
 .flex {
   display: flex;
 }
 
+/***************** Hero **********************/
+
 .hero-section {
   background-image: url(../img/hero-img.png);
   background-position: center;
   background-size: cover;
+  padding: 5% 5% 15% 5%;
+}
 
-  padding: 15% 20%;
+.hero-section-text {
+  padding: 10% 15%;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: 0 2rem 2rem 2rem; */
+}
+
+.hero-btn button {
+  padding: 2% 4%;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+/***************** About **********************/
+
+.about-text {
+  padding: 2rem;
+}
+
+.about-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/***************** Project **********************/
+
+.project-card {
+  margin-bottom: 5rem;
+}
+
+.card-text {
+  background-color: #363636;
+  padding: 2rem;
+}
+
+.project-img {
+  width: 100vw;
+  border-style: solid;
+  border-color: var(--primary-color);
+}
+
+/***************** Language **********************/
+
+.language-icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.languages-section {
+  margin-bottom: 5rem;
+}
+
+.language-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  /* .project-img {
+    width: 100vw;
+    border-style: solid;
+    border-color: var(--primary-color);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .project-img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  } */
+  .project-img {
+    width: 50vw;
+
+    opacity: 0.8;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .project-img:hover {
+    opacity: 1;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-section {
+    flex-direction: row;
+    margin: 5rem;
+  }
+
+  .language-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

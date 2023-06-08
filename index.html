@@ -7,74 +7,180 @@
     <title>Lecture</title>
     <!-- <script defer src='./js/script.js'></script> -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <section class="hero-section">
-        <h1 class="font-size-large color-primary text-center">Hi i'm Stine</h1>
-        <p class="color-secondary text-center">
-          A soon to be front-end developer
-        </p>
+        <section class="hero-section-text">
+          <h1 class="font-size-large color-primary text-center">
+            Hi i'm Stine
+          </h1>
+          <p class="color-secondary text-center font-size-medium">
+            A soon to be front-end developer
+          </p>
+        </section>
         <section class="hero-btn">
-          <a href=""><p>About me</p></a>
-          <a href=""><p>Project</p></a>
-          <a href=""><p>Language</p></a>
+          <button class="btn">
+            <a class="link" href="#about">About me</a>
+          </button>
+          <button class="btn">
+            <a class="link" href="#project">Project</a>
+          </button>
+          <button class="btn">
+            <a class="link" href="#languages">Languages</a>
+          </button>
         </section>
       </section>
-      <section class="about-section">
-        <img src="./img/about-img.jpg" alt="" />
+      <section id="about" class="about-section">
+        <div class="about-img">
+          <img src="./img/about-img.jpg" alt="" />
+        </div>
         <section class="about-text">
-          <h2 class="color-primary">About me</h2>
-          <p></p>
+          <section class="headers">
+            <h2 class="color-primary font-size-medium">About me</h2>
+            <a href="https://www.linkedin.com/in/stine-nygren/">
+              <img class="icon-img" src="./img/linkedin.png" alt="" />
+            </a>
+          </section>
+          <p>
+            I'm currently studying to become a front-end developer at Noroff
+            School of Technology. It's a two-year program, and I'll be
+            graduating by summer 2024. During this course, I'll learn all the
+            important coding languages and also get hands-on experience with
+            UI/UX design. What I enjoy most about front-end development is that
+            it lets me work on problem-solving in my code while also being
+            visually creative with the design.
+          </p>
+          <p>
+            Before becoming a student, I worked as a hairdresser for seven
+            years, and I still work part-time in that field while studying.
+            Although it's quite different from what I'm learning now, I've
+            gained valuable skills and developed a strong work ethic during my
+            time as a hairdresser and from previous work.
+          </p>
+          <p>
+            I believe that merging my background in hairdressing with my passion
+            for technology brings a unique perspective to my work as a front-end
+            developer. I approach challenges with enthusiasm and dedication,
+            always striving to find innovative solutions and create
+            user-friendly experiences.
+          </p>
         </section>
       </section>
-      <section class="project-section">
-        <h2 class="color-primary text-center">Projects</h2>
+      <section id="project" class="project-section">
+        <h2 class="color-primary text-center font-size-medium">Projects</h2>
         <div class="project-card">
           <a href="https://vermillion-marshmallow-256c0b.netlify.app/">
-            <img src="./img/goldbrews-img.png" alt="" />
+            <img class="project-img" src="./img/goldbrews-img.png" alt="" />
           </a>
           <section class="card-text">
-            <h3 class="color-primary">GoldBrews</h3>
-            <i class="git-link"></i>
-            <p></p>
+            <section class="headers">
+              <h3 class="color-primary font-size-medium">GoldBrews</h3>
+              <a href="https://github.com/StineNygren/nygren_stine_exam1"
+                ><img class="icon-img" src="./img/github.png" alt=""
+              /></a>
+            </section>
+            <p>
+              For this project, I undertook the task of creating a coffee-themed
+              blog, inspired by my love for coffee. I designed the site,
+              incorporating colors that complement the coffee aesthetic. The
+              structure and font of the site were chosen with a focus of
+              providing an engaging and user-friendly experience.
+            </p>
+            <p>
+              Using HTML, CSS, and JavaScript, I built the website from scratch.
+              To retrieve and display blog posts, I created a custom API within
+              WordPress. This allowed me to integrate the blog posts through my
+              page. The website is fully responsive, adapting to different
+              screen sizes and devices.
+            </p>
           </section>
         </div>
         <div class="project-card">
-          <a href="https://stupendous-stroopwafel-8bf13b.netlify.app/">
-            <img src="./img/science-img.png" alt="" />
+          <a
+            class="test"
+            href="https://stupendous-stroopwafel-8bf13b.netlify.app/"
+          >
+            <img class="project-img" src="./img/science-img.png" alt="" />
           </a>
           <section class="card-text">
-            <h3 class="color-primary">Community Science Museum</h3>
-            <i class="git-link"></i>
-            <p></p>
+            <section class="headers">
+              <h3 class="color-primary font-size-medium">
+                Community Science Museum
+              </h3>
+              <a
+                href="https://github.com/StineNygren/stinenygren-semesterproject-1"
+                ><img class="icon-img" src="./img/github.png" alt=""
+              /></a>
+            </section>
+            <p>
+              In this project, my objective was to create a website for a
+              science museum with a primary focus on engaging children. With
+              this in mind, I carefully designed the site to incorporate the
+              fascinating world of science while embracing the playful nature of
+              children.
+            </p>
+            <p>
+              The entire website was built using HTML and CSS, ensuring all the
+              necessary functionality while keeping it lightweight. The website
+              is fully responsive, adapting to different screen sizes and
+              devices.
+            </p>
           </section>
         </div>
         <div class="project-card">
           <a href="https://glittering-jelly-7e2d94.netlify.app/">
-            <img src="./img/rainydays-img.png" alt="" />
+            <img class="project-img" src="./img/rainydays-img.png" alt="" />
           </a>
           <section class="card-text">
-            <h3 class="color-primary">Rainydays</h3>
-            <i class="git-link"></i>
-            <p></p>
+            <section class="headers">
+              <h3 class="color-primary font-size-medium">Rainydays</h3>
+              <a href="https://github.com/StineNygren/html-css-ca"
+                ><img class="icon-img" src="./img/github.png" alt=""
+              /></a>
+            </section>
+            <p>
+              The Rainydays project is an e-commerce website that sells various
+              jackets. I designed the site with a minimalist aesthetic, for easy
+              navigation. This project holds a special significance as it is my
+              first project in website development.
+            </p>
+            <p>
+              First built using HTML and CSS, I later added a WordPress API and
+              JavaScript to update the site's capabilities. The website is fully
+              responsive, adapting to different screen sizes and devices.
+            </p>
           </section>
         </div>
       </section>
-      <section class="languages-section">
-        <h2 class="color-primary text-center">Languages</h2>
-        <div class="language-card">
-          <i class="language-icon"></i>
-          <p></p>
-        </div>
-        <div class="language-card">
-          <i class="language-icon"></i>
-          <p></p>
-        </div>
-        <div class="language-card">
-          <i class="language-icon"></i>
-          <p></p>
-        </div>
+      <section id="languages" class="languages-section">
+        <h2 class="color-primary text-center font-size-medium">Languages</h2>
+        <section class="language-cards">
+          <div class="language-card">
+            <i>
+              <img class="language-icon" src="./img/js.png" alt="" />
+            </i>
+            <p></p>
+          </div>
+          <div class="language-card">
+            <i>
+              <img class="language-icon" src="./img/html-fill.png" alt="" />
+            </i>
+            <p></p>
+          </div>
+          <div class="language-card">
+            <i>
+              <img class="language-icon" src="./img/css-fill.png" alt="" />
+            </i>
+            <p></p>
+          </div>
+        </section>
       </section>
     </main>
   </body>
